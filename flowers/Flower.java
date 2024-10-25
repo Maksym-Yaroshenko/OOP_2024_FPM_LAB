@@ -16,20 +16,27 @@ public class Flower {
     }
     
     public double getPrice() {
-        return price;
+        return this.price;
     }
 
     public int getFreshness() {
-        return freshness;
+        return this.freshness;
     }
 
     public double getStemLength() {
-        return stemLength;
+        return this.stemLength;
     }
 
-    public String getDescription() {
-        return "This is a flower: " + name;
+    public String getName() {
+        return "This is a flower: " + this.name;
     }
+    
+    public String getFullName() {
+        return this.name;
+    }
+
+
+
 
     // public void printFlower() {
     //     System.out.println("Rose");

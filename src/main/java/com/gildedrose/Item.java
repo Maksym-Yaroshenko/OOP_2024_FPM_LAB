@@ -39,7 +39,7 @@ public class Item {
         }
     }
 
-    public void updateQualityDefault() {
+    public void updateQuality() {
         decreaseQualityByOne();
         this.sellIn = sellIn - 1;
         if (sellIn < 0) {

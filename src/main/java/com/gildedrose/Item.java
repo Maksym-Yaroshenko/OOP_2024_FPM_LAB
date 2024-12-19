@@ -38,4 +38,12 @@ public class Item {
             this.quality = quality - 1;
         }
     }
+
+    public void updateQualityDefault() {
+        decreaseQualityByOne();
+        this.sellIn = sellIn - 1;
+        if (sellIn < 0) {
+            decreaseQualityByOne();
+        }
+    }
 }

@@ -8,8 +8,8 @@ public class AgedBried extends Item {
     @Override
     public void updateQuality() {
         increaseQualityByOne();
-        sellIn = sellIn - 1;
-        if (sellIn < 0) {
+        decreaseSellInByOne();
+        if (getSellIn() < 0) {
             increaseQualityByOne();
         }
     }

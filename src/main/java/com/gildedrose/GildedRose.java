@@ -9,18 +9,18 @@ class GildedRose {
 
     public void updateQuality() {
         for (Item item : items) {
-            switch (item.name) {
+            switch (item.getName()) {
                 case "Backstage passes to a TAFKAL80ETC concert":
                     item.increaseQualityByOne();
-                    if (item.sellIn < 6) {
+                    if (item.getSellIn() < 6) {
                         item.increaseQualityByOne();
                     }
-                    if (item.sellIn < 11) {
+                    if (item.getSellIn() < 11) {
                         item.increaseQualityByOne();
                     }
-                    item.sellIn = item.sellIn - 1;
-                    if (item.sellIn < 0) {
-                        item.quality = 0;
+                    item.decreaseSellInByOne();
+                    if (item.getSellIn() < 0) {
+                        item.setSellIn(0);
                     }
                     break;
                 case "Sulfuras, Hand of Ragnaros":

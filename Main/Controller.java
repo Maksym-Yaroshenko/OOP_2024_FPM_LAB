@@ -6,9 +6,9 @@ public class Controller {
     }
 
     public void createTravelPackege(Builder builder) {
-        builder.addFlight("BM960", "Kyiv - Lviv");
-        builder.addHotel();
-        builder.addExcursion();
+        builder.addFlight("BM960", "Kyiv - Lviv", "Maksym", "Yaroshenko", "+380960981122");
+        builder.addHotel("Maksym", "Yaroshenko", "+380960981122", "04.07.2025 - 11.07.2025", "2");
+        builder.addExcursion("Maksym", "+380960981122", "06.07.2025");
     }
 
     public void bookTravelPackege(TravelPackege travelPackege) {

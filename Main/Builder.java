@@ -6,15 +6,15 @@ public class Builder {
     }
 
     // Можливо знадобиться функція reset!
-    public void addFlight(String id, String name) {
+    public void addFlight(String id, String road, String name, String surname, String phoneNumber) {
+        System.out.println(name);
+    }
+
+    public void addHotel(String name, String surname, String phoneNumber, String dateOfStay, String numberOfPeople) {
 
     }
 
-    public void addHotel() {
-
-    }
-
-    public void addExcursion() {
+    public void addExcursion(String name, String phoneNumber, String excursionDate) {
 
     }
 

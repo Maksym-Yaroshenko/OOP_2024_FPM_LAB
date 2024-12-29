@@ -1,12 +1,16 @@
+package main;
+
+import Packages.TravelPackage;
+
 public class Builder {
-    private TravelPackege travelPackege;
+    private TravelPackage travelPackage;
 
     public Builder() {
-        this.travelPackege = new TravelPackege();
+        this.travelPackage = new TravelPackage();
     }
 
     // Можливо знадобиться функція reset!
-    public void addFlight(String id, String road, String name, String surname, String phoneNumber) {
+    public void addFlight(String id, String route, String name, String surname, String phoneNumber) {
         System.out.println(name);
     }
 
@@ -18,8 +22,8 @@ public class Builder {
 
     }
 
-    public TravelPackege getTravelPackege() {
-        return travelPackege;
+    public TravelPackage getTravelPackage() {
+        return travelPackage;
     }
 
 }

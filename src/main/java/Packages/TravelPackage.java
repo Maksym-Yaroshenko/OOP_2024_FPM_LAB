@@ -1,4 +1,6 @@
-public class TravelPackege {
+package Packages;
+
+public class TravelPackage {
     private String flightInformation;
 
     public void setFlightInformation(String flightInformation) {

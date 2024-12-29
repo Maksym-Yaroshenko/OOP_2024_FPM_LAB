@@ -20,7 +20,7 @@ public class Builder {
             String name, String surname, String phoneNumber,
             int numberOfPeople) {
         travelPackage.setHotelInformation(
-                "Hotel: " + hotelName + ", Stay: " + checkIn + " - " + checkOut + ", Guests: " + numberOfPeople);
+                "Name Hotel: " + hotelName + ", Stay: " + checkIn + " - " + checkOut + ", Guests: " + numberOfPeople);
 
     }
 
